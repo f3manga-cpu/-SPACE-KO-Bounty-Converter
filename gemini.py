@@ -3,8 +3,8 @@ import numpy as np
 
 # Page Configuration
 st.set_page_config(page_title="SPACE KO Bounty Assistant", layout="wide")
-
-st.title("🎯 SPACE KO Strategy Calculator")
+st.page_icon="🛸",
+st.title("🛸 SPACE KO Strategy Calculator")
 st.markdown("---")
 
 # --- SIDEBAR: TOURNAMENT SETUP ---
