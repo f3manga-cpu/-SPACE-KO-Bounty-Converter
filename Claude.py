@@ -23,7 +23,7 @@ def bounty_in_bb(buy_in, starting_stack, current_bb, token_avg_eur):
     one_bb_in_eur = current_bb * chip_value_eur
     if one_bb_in_eur == 0:
         return 0
-    return token_avg_eur / one_bb_in_eur
+    return token_avg_eur / one_bb_in_eur / 2
 
 def calculate_pot_odds(pot_before, amount_to_call, bounty_bb=0):
     """Calculate required equity % to call (with and without bounty)"""
