@@ -17,7 +17,7 @@ def bounty_in_bb(buy_in, starting_stack, current_bb, token_avg_eur):
     one_bb_in_eur = current_bb * chip_value_eur
     if one_bb_in_eur <= 0:
         return 0.0
-    return token_avg_eur / one_bb_in_eur
+    return token_avg_eur / one_bb_in_eur / 2
 
 
 def pot_odds(amount_to_call, pot_before, bounty_bb=0):
