@@ -48,7 +48,7 @@ with st.expander("📐 Advanced: SPR & Geometric Sizing"):
 # Note: SPACE KO uses the full buy-in logic for its internal math [cite: 3, 11]
 chip_to_eur_ratio = buy_in / start_stack
 one_bb_eur = curr_bb_chips * chip_to_eur_ratio
-bounty_in_bb = villain_bounty_eur / one_bb_eur if one_bb_eur > 0 else 0
+bounty_in_bb = villain_bounty_eur / one_bb_eur / 2 if one_bb_eur > 0 else 0
 
 # 2. Equity Calculations
 # Pot Odds = Call / (Pot + Call + Bounty)
